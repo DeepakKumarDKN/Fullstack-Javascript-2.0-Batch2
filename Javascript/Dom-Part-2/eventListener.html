@@ -1,0 +1,32 @@
+<p>if we have to open something in our system then we have to double click on that 
+particular file and we can open that file.
+<br>
+so in this whole process i told my sytem to double click on that particular file and open that file 
+so this double click is known as event.</p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventListener</title>
+</head>
+<body>
+  <h1>Learning Event Listener</h1>
+  <script>
+    let title = document.createElement('h2')
+    title.className = "titleName"
+    title.textContent = "Creating An Element using MDN"
+    title.style.color = "red"
+    title.style.fontFamily = "Poppins"
+    document.body.appendChild(title)
+    console.log(title)
+
+    let element = document.querySelector(".titleName")
+    element.addEventListener("click", function removeElement(){
+      document.body.removeChild(title)
+    })
+  </script>
+</body>
+</html>

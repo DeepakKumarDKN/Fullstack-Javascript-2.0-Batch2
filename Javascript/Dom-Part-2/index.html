@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello Javascript Bootcamp 2.0</h1>
+  <button onclick="maths()" id = "fsjs">Submit</button>
+  <h1 class="js2"></h1>
+  <ul>
+
+  </ul>
+  <script>
+     function maths(){
+      let value = prompt('Find the value of 30-10')
+      if(value == 20){
+        document.querySelector(".js2").innerText = "Success Redirect"
+        document.querySelector(".js2").style.fontFamily = "Poppins"
+        document.getElementById("fsjs").style.backgroundColor = "Green"
+        document.getElementById("fsjs").style.padding = "20px 45px"
+        document.getElementById("fsjs").style.color = "white"
+        document.getElementById("fsjs").style.border = "0px"
+        document.getElementById("fsjs").innerText = "Fetched Correct value"
+      }
+      else{
+        document.getElementById("fsjs").innerText = "Failed To Fetch Correct value"
+        document.getElementById("fsjs").style.backgroundColor = "Red"
+        document.getElementById("fsjs").style.padding = "20px 45px"
+        document.getElementById("fsjs").style.color = "white"
+        document.getElementById("fsjs").style.border = "0px"
+      }
+    }
+   
+  </script>
+</body>
+</html>

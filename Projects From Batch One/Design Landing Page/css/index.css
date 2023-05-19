@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+:root{
+  --font-color-purple: #619EF0;
+  --font-color-white: #FDFEFF;
+  --font-color-darkblue: #053859;
+}
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: url(../images/backcover.svg);
+  background-repeat: no-repeat;
+  background-position: right;    
+  background-position-y: bottom;  
+  background-size: 1080px;                                               
+ 
+
+}
+
+.maxWidth{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* navbar styling starts */
+nav{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5px;
+}
+
+nav .nav-items{
+  display:flex;
+  gap: 2rem;
+}
+
+nav .nav-items h5{
+  cursor: pointer;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+nav .nav-items h5:hover{
+  color: var(--font-color-purple);
+  transition: 0.3s all ease-in-out
+}
+
+nav img[alt="logo"]{
+  width: 120px;
+  object-fit: cover;
+}
+
+/* button styling starts */
+
+.signin-btn{
+ padding: 5px 20px;
+ border: none;
+ border-radius: 20px;
+ background-image: linear-gradient(to right,  #355ef3 0%, #cf6cc9 50%, #ee609c 90%, #ee609c 100%);
+ color: var(--font-color-white);
+ font-family: Poppins;
+ font-weight: 400;
+
+}
+
+.intro-section{
+  display:flex;
+}
+.left-section{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 0px 5px;
+}
+
+.left-section h1{
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: var(--font-color-darkblue)
+}
+
+.intro-section .left-section h4{
+  width:350px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+
+.intro-section img[alt="intro-img"]{
+  max-width: 700px;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.intro-section .learn-more-btn{
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  border:none;
+  border-radius: 50px;
+  background-image: linear-gradient(to right,  #355ef3 0%, #cf6cc9 50%, #ee609c 90%, #ee609c 100%);
+  color:var(--font-color-white);
+  font-weight: 600;
+}
+
+.imgs-div{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.imgs-div>:nth-child(1){
+  grid-column: 1 / span 2;
+  align-self: flex-end;
+  grid-row: 1;
+  padding-left: 100px;
+}
+.imgs-div>:nth-child(2){
+  align-self: flex-end;
+  padding-bottom: 80px;
+  padding-left: 150px;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+@media only screen and (max-width:1300px){
+  .intro-section{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width:768px){
+  body{
+    background-position: top;
+    object-fit: contain;
+  }
+  .intro-section img[alt="intro-img"]{
+    grid-column: 1/ -13;
+  }
+  .nav-items>:nth-child(5){
+    display:none
+  }
+  .intro-section .learn-more-btn{
+    width:100%;
+    margin-bottom: 10px;
+  }
+   .imgs-div{
+    padding: 0px 5px;
+  }
+  imgs-div>:nth-child(1){
+    grid-column: 1 / -1;
+    
+  }
+  .imgs-div>:nth-child(2){
+    grid-column: 1 /  -1;
+    grid-row: 1;
+  }
+}
+
+@media only screen and (max-width:650px){
+  .nav-items>:nth-child(4){
+    display:none;
+  }
+  .imgs-div img[alt="intro-img"]{
+    max-width: 500px;
+    object-fit: contain;
+  }
+  .imgs-div>:nth-child(1){
+    padding-left: 0px;
+  }
+  .imgs-div>:nth-child(2){
+    padding-bottom: 80px;
+    padding-left:50px;
+  }
+}
+@media only screen and (max-width:500px){
+  .imgs-div img[alt="intro-img"]{
+    max-width: 400px;
+    object-fit: contain;
+  }
+  .nav-items>:nth-child(3){
+    display:none
+  }
+}
+
+@media only screen and (max-width:400px){
+  .nav-items>:nth-child(2){
+    display:none
+  }
+  .nav-items>:nth-child(1){
+    display:none
+  }
+  .imgs-div img[alt="intro-img"]{
+    max-width: 300px;
+    object-fit: contain;
+  }
+  .left-section h1{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--font-color-darkblue)
+  }
+  
+  .intro-section img[alt="intro-img"]{
+    grid-column: 1/ -1;
+    padding-bottom: 280px;
+  }
+}
+
+
+
+
+
+
+
+

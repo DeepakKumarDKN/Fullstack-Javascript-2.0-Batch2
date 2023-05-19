@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+  }
+
+body{
+  max-width: 1280px;
+  margin: auto;
+  background-color: rgb(254, 250, 243);
+}
+.list-items{
+  display:flex;
+  gap: 4rem;
+  list-style: none;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  font-family: "Poppins";
+}
+
+
+
+main{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 300px);
+  gap: 3rem;
+  padding: 0px 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.leftmain{
+  width:50%;
+  display:flex;
+  flex-direction: column;
+  gap: 1rem
+}
+.rightmain{
+  width: 50%;
+}
+
+.leftmain h1{
+  font-size: 3rem;
+  font-family: "Poppins";
+  max-width: 400px;
+  font-weight: 600;
+}
+.leftmain p{
+  font-size: 1rem;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+.leftmain button{
+  width: max-content;
+  padding: 14px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  border:none;
+  background-color: green;
+  color: white;
+  font-family: "Poppins";
+}
+
+.rightmain{
+  display:flex;
+  flex-direction: column;
+  gap: 1rem
+}
+
+.rightmain div img{
+  max-width: 200px;
+  object-fit: contain;
+
+}
+.rightmain div{
+  display:flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+.rightmain>:nth-child(2){
+  max-width: 400px;
+  align-self: flex-end;
+  object-fit: contain;
+}
+
+
+@media only screen and (max-width: 900px){
+  main{
+    flex-direction: column;
+  }
+  .leftmain{
+    width: 100%;
+  }
+  .rightmain{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .rightmain>:nth-child(2){
+    max-width: 400px;
+    align-self: center;
+    justify-content: center;
+  }
+  .leftmain h1{
+    width: 100%;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 460px){
+  .list-items>:nth-child(4){
+    display:none
+  }
+  .list-items>:nth-child(2){
+    display:none
+  }
+  .list-items>:nth-child(3){
+    display:none
+  } 
+  .rightmain div img{
+    max-width: 150px;
+    
+    
+  }
+  .rightmain>:nth-child(2){
+    max-width: 300px;
+    
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .list-items>:nth-child(4){
+    display:none
+  }
+  .list-items>:nth-child(2){
+    display:none
+  }
+  .list-items>:nth-child(3){
+    display:none
+  } 
+  .rightmain div img{
+    max-width: 100px;
+    
+    
+  }
+  .rightmain>:nth-child(2){
+    max-width: 200px;
+    
+  }
+}

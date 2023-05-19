@@ -1,0 +1,120 @@
+TODO:
+Javascript is not possible without the beautiful Execution Context.
+Execution Context will get created when we run a Javascript Program.
+
+Everything In Javascript Happens Inside The Execution Context.
+Execution Context Is Something Where Our Whole Program Is Getting Executed.
+
+The execution Context is divided into two following parts.
+1. Memory Part.
+2. Code Component.
+
+The memory Part is where all the variables and functions are stored in the form of key-value pair.
+
+suppose we have a variable userName and its value is "deepak" so it will store inside the memory component as a key-value pair variable: value
+
+The memory Component is otherwise known as the variable environment.
+
+Code Component:
+---------------
+This is the place where your code will execute one line at a time. It is also known as the thread of Execution.
+
+Javascript is a synchronous single-threaded programming language.
+Single-threaded means javascript can only execute one line at a time.
+
+Synchronous Single Threaded mean javascript can execute one command at a time and in a specific order which means it will go to the next line when the current line has finished its execution. 
+
+
+var n = 2;
+function square (num){
+  var ans = num*num
+  return ans
+}
+
+var square2 = square(n)
+var square4 = square(4)
+
+
+when we run the whole code a global execution context is created.
+and as I said it has two components: 
+1 memory component.
+2 code component.
+
+The execution context is created in two phases. 
+1 memory creation phase/creation phase.
+2 code execution phase.
+
+
+Memory Creation Phase
+--
+In the first phase, Javascript will allocate memory to all variables and functions.
+so let's discuss now what will happen in the first phase it will run the whole program but one by one and reserve memory for the variables and function.
+
+when the 1st line will get executed or when it will encounter the 1st line then it will try to allocate memory to n and after allocating memory it will store a special value called undefined.
+
+and after that, it will go to line 2 and will allocate some memory to square which is a function.
+
+and then it will also allocate memory to square 2 and square 4 and there also it will store undefined.
+
+The second Phase is the code Execution Phase.
+In this phase, our whole code will execute and it will be done one by one this is the place 
+where all the functions and calculations are being done.
+
+as soon as it encounters the first line var n = 2, it places the value 2 inside n  where undefined was stored earlier.
+
+there is nothing to execute in line number 2 as it is a function and the function will get executed only after calling so it will move to line number 6:
+
+so the function is just like a mini-program when it will encounter the 6th line a mini execution context will be created which is again divided into two component 
+
+1. memory component 
+2. code component
+
+so now again the 1st phase will start where it will allocate memory to variables here we will be allocating memory to num and ans.
+
+now comes phase two.
+when the function is invoked square(n)
+the value of n which is 2 is passed to the parameter num
+num is here parameter that is used during the function definition 
+and n is here argument which is used during the function call.
+
+in the second phase, the value of n which is 2 will get stored inside num where 
+undefined is stored earlier.
+
+then it will go to the 3rd line where num*num = 4 will now replace the undefined.
+and then it will come to the next line where we encounter the special keyword return
+
+and return will return the control there where the function was invoked in line number7
+so now var square 2 will hold the value 4:
+var square2= 4;
+
+previously in square2 undefined was stored now it will replace with 4:
+as soon as it returns the value this part is done the execution is over 
+after getting over the whole execution part will get deleted
+
+now we will go the line number 7 where we are again invoking a function as soon as the 
+function invocation happens again a mini execution context is created and again it is divided into two parts.
+
+1. memory component 
+2. code component
+
+In the first Phase, the memory execution Phase will happen where again num and ans will be allocated memory and will be stored undefined to it.
+
+In the second Phase in the code Execution Phase num will get the argument 4 and now 4 will be replaced with undefined so now in the second phase the value of num is 4;
+
+and after that, it will go to line number 3 and execute num *num which is 16 and now 16 
+will be replaced with undefined
+
+and after that, it will come to line number 4 where it will return the ans where it was called that is line number 8
+
+now var square4 = 16, so it will be replaced with 16 because previously undefined is being stored there
+
+as soon as we are done with the execution so the whole global execution context will also be deleted.
+
+
+var name = "Deepak Kumar Nayak"
+
+function displayDetails(){
+  let name :"Deepak",
+  let batch: "Two",
+  let courseName : "Fullstack Javscript BootCamp 2.0"
+}

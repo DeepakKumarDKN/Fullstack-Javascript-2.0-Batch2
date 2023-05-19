@@ -1,0 +1,203 @@
+dom : - document object model
+
+TODO: // how to select an element.
+TODO: // select an element by getElementById
+
+ const result = document.getElementById("home").innerHTML
+ console.log(typeof result) : string type
+
+ const result = document.getElementById("home")
+ console.log(typeof result) : object type
+
+ const result = document.getElementById("home").innerHTML
+ console.log(result) : Home 
+
+ const result = document.getElementById("home").innerText = "home"
+ console.log(result) : home
+
+
+TODO: // selecting element using query selector
+it will only give us the fist element.
+
+TODO: // selecting element using query selector all 
+const navitem = document.querySelectorAll(".nav-item")
+console.log(navitem)
+
+TODO: // Change Text
+  const mainHeading = document.getElementById("main-heading")
+  console.log(mainHeading.textContent)
+
+  mainHeading.textContent = "Changed its Content"
+  console.log(mainHeading.innerText)
+
+
+TODO: // Change the styles of an element.
+
+  const mainHeading = document.getElementById("main-heading")
+  mainHeading.style.color="#CAD5E2"
+  mainHeading.style.fontSize = "x-large"
+
+  const button = document.querySelector("div.headline button")
+  button.style.color = "white"
+  button.style.background = "#5A20CB"
+  button.style.fontSize = "x-large"
+  button.style.borderRadius = "25px"
+  button.style.fontFamily = "Poppins"
+
+
+TODO: // Get ans Set Attribute
+
+const link = document.querySelector("a")
+console.log(link.getAttribute('href'))
+
+
+const inputElement = document.querySelector("input")
+console.log(inputElement.getAttribute('type'))
+
+//TODO: get multiple elements by using queryselctorall and classname
+
+ const navItem = document.getElementsByClassName("nav-item")
+ console.log(navItem)
+
+ const navItems = document.querySelectorAll('.nav-item')
+ console.log(navItems)
+
+
+// using loop 
+const navItem = document.getElementsByClassName("nav-item")
+console.log(navItem) : - this will give us html collection so we cannot use 
+forEach loop with html collection
+
+we can use for of loop and simple for loop.
+
+TODO: // adding some background color to nav-item using for loop in dom 
+
+code: 
+-----
+const navItem = document.getElementsByClassName("nav-item")
+      
+for(let i = 0; i<navItem.length; i++){
+  const change = navItem[i]
+  change.style.background = "#EDC126"
+  change.style.padding= "8px"
+  }
+
+TODO: Changing the color of home todo and signup in dom uing for loop 
+
+code:
+------
+const changeColor = document.getElementsByTagName("a")
+
+for (let i = 0; i<changeColor.length; i++){
+  const colorChange = changeColor[i].style.color = "#E07C24"
+  const changeFont = changeColor[i].style.fontFamily = "Poppins"
+  const fontweight = changeColor[i].style.fontWeight = "600"
+}
+
+// doing the same task with for of loop
+
+code:
+----
+const changeColor = document.getElementsByTagName("a")
+for (let i of changeColor){
+  i.style.background= "orange"
+  i.style.padding = "5px 15px"
+  i.style.color = "black"
+  i.style.fontWeight = 500
+  i.style.borderRadius = "10px"
+}
+
+//TODO: NOTE 
+IFwe want to use foreach hen we have to convert it into array by using 
+
+let changenavItems = document.getElementsByTagName('a')
+    changenavItems = Array.from(changenavItems)
+    console.log(Array.isArray(changenavItems))
+
+    for (let i of changenavItems){
+      i.style.background= "orange"
+      i.style.padding = "5px 15px"
+      i.style.color = "black"
+      i.style.fontWeight = 500
+      i.style.borderRadius = "10px"
+}
+
+
+//TODO: using tagname and class name will ge is html collection 
+//TODO: Using querySelectorAll will give us the node list 
+//TODO: in node list we can use forloop, simpleloop as well as forEachLoop
+
+// TODO: Working with query selector using forof loop:
+
+let changenavItems = document.querySelectorAll('.nav-item')
+for(let i of changenavItems){
+  i.style.background = "red"
+  i.style.padding = "5px 15px"
+}
+
+
+//TODO: Working with query selector using simple for loop
+let changenavItems = document.querySelectorAll('.nav-item')
+for(let i =0; i<changenavItems.length; i++){
+  const changebackground = changenavItems[i].style.background = "green"
+  const addPadding = changenavItems[i].style.padding = "5px 15px"
+  const addfontWeight = changenavItems[i].style.fontWeight = "600"
+}
+
+//TODO: Working with queryselector using forEachLoop:
+let changenavItems = document.querySelectorAll('.nav-item')
+changenavItems.forEach(navitems => {
+  navitems.style.background = "red"
+  navitems.style.padding = "5px 15px"
+});
+
+//TODO: Converting node list into array using Array.from()
+let changenavItems = document.querySelectorAll('.nav-item')
+changeItems= Array.from(changenavItems)
+console.log(Array.isArray(changeItems))
+
+console.log(changeItems)
+
+
+//TODO: working with innerHtml
+
+let changeit = document.querySelector("#main-heading")
+changeit.innerHTML = "<h1>Changed</h1>"
+
+
+//TODO: Working with click event on button
+ const btn = document.querySelector(".btn-headline")
+      btn.addEventListener("click", function myFunc(){
+        document.querySelector(".btn-headline").style.background = "green"
+      })
+
+// TODO: Exampls on Event Listener using mouseover and mouseleave
+
+ let button = document.querySelectorAll(".todo-buttons button")
+      for(let i of button){
+        i.addEventListener("mouseover", function show(){
+          i.style.background = "green"
+          i.style.border = "0px"
+          i.style.color = "white"
+
+        })
+      }
+
+      for(let i of button){
+        i.addEventListener("mouseleave", function changeonmouseLeave(){
+          i.style.background = "#eee"
+          i.style.border = "0px"
+          i.style.color = "black"
+
+        })
+      }
+
+
+
+      let text = document.querySelector(".text")
+      text.addEventListener("mouseover", function changeColor(){
+        text.style.color = "red"
+      })
+      text.addEventListener("mouseleave", function mouseLeave(){
+        text.style.color= "white"
+      })

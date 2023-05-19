@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Passion+One&family=Poppins:wght@400;600;700;800;900&display=swap');
+
+:root{
+  --ft-orange: #FF5733;
+  --ft-black : #070707;
+  --ft-grey : #aea8a8;
+  --ft-white : #ffffff;
+
+  --bg-orange: #FF5733;
+  --bg-black: #070707;
+  --bg-white: #FFFFFF;
+  --bg-yellow : #FAFA07;
+
+  --border-color: #FF5733;
+}
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+.maxWidth{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+nav{
+  display:flex;
+  justify-content: space-between;
+  padding: 1rem 10px;
+  width: 100%;
+}
+
+.nav-items{
+  display:flex;
+  align-items: center;
+  gap: 4rem
+}
+
+.nav-items h5{
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 500;
+}
+.nav-items h5:hover{
+  color: var(--ft-orange);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+nav>:nth-child(1){
+  max-width: 120px;
+  object-fit: contain;
+}
+.cart-section{
+  display:flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.cart-section img{
+ max-width: 25px;
+ object-fit: contain;
+
+}
+.intro-section{
+  display: flex;
+  margin-top: 4rem;
+}
+
+.left-section{
+  display:flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+.left-section h1{
+  margin-top: -2.2rem;
+}
+
+.sub-headlines{
+  padding-left: 80px;
+}
+.sub-headlines>:nth-child(1),
+.sub-headlines>:nth-child(2),
+.sub-headlines>:nth-child(3){
+  
+  display:flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sub-headlines h5{
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.sub-headlines img[alt="plus"]{
+  background-color: var(--bg-orange);
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  padding: 2px;
+}
+
+.left-section h3{
+  font-size: 3rem;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+.left-section img[alt="circles"]{
+  max-width: 60px;
+}
+.left-section h1{
+  font-family: "Poppins";
+  font-size: 4rem;
+}
+.left-section .text{
+  font-family: "Poppins";
+  max-width: 700px;
+  color: var(--ft-grey)
+}
+
+.left-section .action-btn{
+  padding: 1rem 2rem;
+  background-color: var(--bg-orange);
+  border:none;
+  color: var(--ft-white);
+  font-size: 1rem;
+  border-radius: 50px;
+}
+
+.left-section .action-btns{
+  display:flex;
+  gap:1.5rem;
+  margin: 0 auto 1rem auto
+}
+
+.right-section{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width:600px;
+}
+
+.right-section .headphone-div{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr); 
+}
+.right-section .headphone-div .discount{
+  height: 170px;
+  align-self: flex-end;
+  grid-column: 1/ span 2;
+  grid-row:1;
+  padding-left: 90px;
+  padding-bottom: 50px;
+
+}
+.right-section .headphone-div .discount-content {
+    align-self: flex-end;
+    grid-column: 1/ span 2;
+    grid-row: 1;
+    padding-left: 120px;
+    padding-bottom: 80px;
+    color: var(--ft-white);
+}
+
+
+.headphone-div img[alt="headphone"]{
+  grid-column: 3/-1;
+  grid-row: 1;
+  max-width: 400px;
+  height: 100%;
+  z-index: -1;
+}
+
+.dots{
+  display:flex;
+  gap:1rem
+}
+
+.dot{
+  height:25px;
+  width:25px;
+  border-radius: 50%;
+}
+.yellow-dot{
+  background-color: var(--bg-yellow);
+}
+
+.tomato-dot{
+  background-color: var(--bg-orange);
+}
+
+.black-dot{
+  background-color: var(--bg-black);
+}
+
+.right-section .action-btn{
+  padding: 1rem 2.5rem;
+  border:none;
+  border-radius:50px;
+  font-size: 1.2rem;
+  background-color: var(--bg-orange);
+  color: var(--ft-white)
+}
+
+@media only screen and (max-width: 1200px){
+  .intro-section{
+    flex-direction: column-reverse;
+  }
+  .right-section{
+    margin: 0 auto;
+  }
+  .left-section {
+    padding:10px 5px 0px 5px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .nav-items{
+    gap:1rem
+
+  }
+  .right-section{
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  nav{
+    flex-direction: column;
+    align-items: center;
+    gap:1rem
+  }
+  .left-section .text{
+    width:100%
+  }
+  .headphone-div img[alt="headphone"] {
+    grid-column: 3/-1;
+  }
+  .right-section .headphone-div .discount{
+    padding-left: 50px;
+  }
+  .right-section .headphone-div .discount-content{
+    padding-left: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 460px){
+  .headphone-div img[alt="headphone"]{
+    grid-column: 3/-1;
+    grid-row: 1;
+    max-width: 300px;
+    height: 100%;
+    z-index: -1;
+  }
+  .right-section .headphone-div .discount{
+    padding-left: 30px;
+    padding-bottom: 30px;
+    height: 130px;
+  }
+  .right-section .headphone-div .discount-content{
+    padding-left: 55px;
+    padding-bottom: 55px;
+    font-size: 13px;
+  }
+  .left-section h3 {
+    font-size: 2rem;
+    font-family: "Poppins";
+    font-weight: 600;
+  }
+  .left-section img[alt="circles"] {
+    max-width: 40px;
+  }
+  .left-section h1 {
+    font-family: "Poppins";
+    font-size: 2rem;
+  }
+  .left-section .action-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width:100%;
+  }
+  .left-section .text {
+    font-family: "Poppins";
+    width:100%;
+    font-size: 14px;
+  }
+  .right-section .action-btn {
+    width:100%;
+  }
+  .right-section{
+    padding: 0px 5px;
+  }
+
+  
+}
+
+@media only screen and (max-width: 360px){
+  .headphone-div img[alt="headphone"]{
+    grid-column: 3/-1;
+    grid-row: 1;
+    max-width: 250px;
+    height: 100%;
+    z-index: -1;
+  }
+  .right-section .headphone-div .discount{
+    padding-left: 30px;
+    padding-bottom: 30px;
+    height: 110px;
+  }
+  .right-section .headphone-div .discount-content{
+    padding-left: 48px;
+    padding-bottom: 52px;
+    font-size: 10px;
+  }
+}

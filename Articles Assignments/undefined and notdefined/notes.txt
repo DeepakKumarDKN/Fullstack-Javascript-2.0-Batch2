@@ -1,0 +1,37 @@
+undefined
+---------
+undefined is something which we will found only in javascript not in any other languages.
+you guys must be wondering what is actually undefined is and where does it come from..
+
+lets get into it. undefined is a very special word in javascript
+we know that our javascript program execute in a very diffrent way 
+
+as soon as the javascript code execute the global execution context is created 
+and it is allocated memory to each variable and functions even before ou code execute ..
+
+so now we are in the phase one and in the phase one the meory allocation happen at that time 
+undefined will come into picture because in  phase one during memory allocation a special word known as undefined 
+is being stored inside the variable ...
+
+and it will remain stored inside it untill and unless we move into 2nd phase which is known as code execution phase
+because in code execution phase only it will be replace with its original value ..
+
+so this is how undefined come into picture ....
+
+Javascript is a loosely typed language suppose if we hace declared something
+var a = 20 but later on we can change the value of "a" then we can do it.
+
+var a = true # here i am changing its datatype. this is what called loosely typed language
+
+Languages like c and c++ they are strictly typed language if we are storing a string inside a variable 
+then we cannot change it  it will only hold a string.
+
+Not defined
+-----------
+not defined mean were accessing something which are not defined in our program that means 
+var a = 10 
+
+console.log(b)
+
+here i have declared a but i havnt declared b .. so if i will acess b it will throw us an errror that 
+ReferenceError: b is not defined

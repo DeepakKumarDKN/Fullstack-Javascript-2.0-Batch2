@@ -1,0 +1,318 @@
+Programming Language Fundamentals:
+----------------------------------
+Values
+Operations
+Vaiables
+Decisions
+Loops
+Functions
+
+
+Datatype Number
+---------------
+7 and 6.7 both of them are treated as number in Javascript 
+in other programming language it is treated as Int and Float.
+
+Number with decimal (7.8)
+whole number (7)
+
+
+String Data Type
+----------------
+('deepak')
+
+Boolean Values
+--------------
+true and false are called as boolean values.
+true simple means one and false simply means 0.
+
+null and Undefined
+-------------------
+Both of them are called as empty values it means it doesn't contain any values.
+
+Datatype, String, Boolean, null and undefined all of these are called as 
+primitive values or Primitive Dataypes
+
+Array And Object 
+-----------------
+Array is created using double square bracket.[]
+for example [1,2,3,4,5,6] The benefit of aray inthe javascript is we can have 
+n number of type in the inside an Array for example we can keep and int value, boolen value 
+string value and number as well
+
+example of Aray contain diffrent Datatype:  
+
+[1,2,'deepak',5,'kumar',true,'nayak']
+
+Array Indexing
+---------------
+Note: everything in javascript starts from zero.
+
+[1,2,'deepak',5,'kumar',true,'nayak']
+
+1 - index 0
+2 - index 1
+'deepak' - index 2
+5 - index 3
+kumar - index 4
+true - index 5
+nayak - index 6
+
+
+Objects
+-------
+Objects are created using double curly bracket. which contain a key value pair
+
+{ 
+  key:value
+ }
+
+{
+  "fname":"deepak"
+}
+
+fname is key 
+deepak is value 
+
+we can write anything inside the key whetever we will write it will be converted into string
+if we write a number then also it will get converted into string.
+
+Array and Objects these two are called as non primitive Datatypes.
+Primitive Datatype will always have single value
+non primitive datatype contain more than one value.
+
+
+Variables 
+---------
+1. Variables are used to store some data or some value we can store our value and data in three diffrent types 
+  a. var   
+  b. let   
+  c. const
+
+2. Variable is case sensitive 
+
+
+3. we cannot start a variable name with a number: 
+
+  let 1firstname = "deepak" ---- this is not allowed.
+  let firstname1 = "deepak" --- this is allowed 
+
+the naming covenction should be good thats why no need of using numbers
+we can just write with the help of small letter and camelcase
+
+  let firstname = "deepak"
+  let firstName = "deepak"
+
+4. we can use _ or $ symbol you cannot use space.
+
+  _fistname = "deepak" (valid)
+  first_name = "deepak" (valid)
+  first$name = "deepak" (valid)
+  $firstname = "deepak" (valid)
+  first name = "deepak" (invalid)
+
+
+let:
+----
+if we are declaring something with the help of let then we can changes its value whenever we need
+which is not allowed in const becauuse const doesnt allow you to change its value.
+
+for example: 
+
+let a = 50 
+a= 100
+console.log(a)
+
+we will get the output as 100 instead of 50.
+-----------------------------------------------------------------------
+Note:
+-----
+in let after declaring something if we are not assigning a value then we will 
+get the output as undefined but in the case of const we will get an Syntax error msg as
+
+SyntaxError: Missing initializer in const declaration
+that means in cost we have to assign a value.
+
+
+------------------------------------------------------------------------
+const
+------
+
+
+while using const if we are declaring something then we have to assign something to it otherwise we will get error 
+for example 
+
+const a; 
+console.log(a)  # missing initializer at const declaration that means we will get error here
+
+const a = 10 
+console.log(a) # this is correct way of writting so don't follow the above one.
+
+never use var we can use either let and const.
+const is something which will not change for example our bank account number.
+
+TODO: Note: we just can't simply declare the variable of const we have to assign some value 
+TODO: to it and once declare we cant change the value of it
+
+let is something which keeps on changing for example bank balance
+
+let name = "deepak"
+let lastname = "nayak"
+cont mobileno = 9090909090
+
+-----------------------------------
+
+
+let firstname = "deepak"
+let lastname = "nayak"
+
+console.log('My name is:', firstname , lastname)  TODO: Always use this one
+console.log('My name is:' + firstname) TODO: no need to use this one.
+
+Output
+-------
+My name is: deepak nayak
+My name is: deepak
+
+
+Template Literal
+----------------
+console.log(`
+  My name is : ${firstname}
+`)
+
+Output
+------
+My name is : deepak nayak
+
+Conclusion:
+Topics we studies till now:
+
+1. History
+2. Basic Pillar of an programming Language
+3. values
+4. Datatypes
+5. Diffrence between primitive and non-primitive
+6. Array
+7. Object 
+9. Template Literal
+10. Variables
+
+
+Operator
+--------
+let x = 10
+let y = 20 
+console.log(x+y)
+
+Assignment Operator (=)
+-----------------------
+here i am assigning 10 to x so 10 will get store inside x.
+
+Arithmetic Operator (+ | - | * | / | % (modulus operator[remainder]) |)
+--------------------
+console.log(x+y)
+console.log(x*y)
+console.log(x-y)
+console.log(x/y)
+console.log(x%y)
+
+Comparison Operator
+--------------------
+let abc = 10
+let xyz = 20 
+
+console.log(abc > xyz)
+console.log(abc < xyz)
+console.log(abc >= xyz)
+console.log(abc <= xyz)
+
+
+== and ===
+
+let a = 10 
+let b = "10"
+
+console.log(a == b) will give us true 
+console.log(a === b) will givs us false.
+
+because the second one is checking its datatype
+
+
+Conditions
+----------
+
+let age = 16
+if (age == 18){
+  console.log('You are allowed for voting')
+}
+console.log('You are not allowed for voting')
+
+Output
+------
+You are not allowed for voting
+
+Example-2
+----------
+let standard = 12
+
+if(standard == 10){
+  console.log('Hello You are from class 10th')
+}else if(standard == 11){
+  console.log('Congratulation you hae completed your 10th')
+}else if(standard == 12){
+  console.log('Congratulation for completing your 11th')
+}else{
+  console.log('You have completed your 12th with 90%')
+}
+
+
+
+Some string methods
+-------------------
+let username = "deepak"
+console.log(username.toLowerCase())
+console.log(username.toUpperCase())
+console.log(username.indexOf("d"))
+console.log(username.concat(' kumar'))
+
+console.log(username.endsWith("k"))
+console.log(username.startsWith('d'))
+console.log(username.endsWith("r"))
+console.log(username.startsWith("p"))
+
+
+console.log(username.includes("l"))
+
+console.log(username.repeat(2))
+
+let fullName = "deepak kumar nayak"
+console.log(fullName.split(" "))
+console.log(fullName.slice(0,10))
+
+let surname = "   nayak    "
+console.log(surname.trim())
+
+
+Template String
+---------------
+let name = "Deepak Kumar Nayak"
+let batch = "BatchTwo"
+let courseName = "Fullstack Javascript Bootcamp-2"
+
+let aboutme = `My name is ${name} from ${batch} 
+and my coursename is ${courseName}`
+console.log(aboutme)
+
+Objects Example
+----------------
+let EmployeeOneData = {
+  'firstName': 'Deepak Kumar',
+  'lastName' : 'Nayak',
+  'email': 'deepaknnayak34@gmail.com',
+  'Location': 'Kolkotta',
+  'phone': 9090876780,
+}
+
+console.log(EmployeeOneData['phone'])
+console.log(EmployeeOneData.phone)

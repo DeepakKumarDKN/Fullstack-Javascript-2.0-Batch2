@@ -1,0 +1,832 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --bg-light-black: #0000;
+  --bg-black: #000000;
+  --bg-white: #ffffff;
+  --bg-orange: #fc4242;
+  --bg-orange-light: #f69d9d;
+
+  --font-color-white: #ffff;
+  --font-color-black: #141414;
+  --font-color-darkgrey: #434542;
+  --font-color-grey: #99a097;
+  --font-color-orange: #ff6263;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+.padding-left-right {
+  padding: 0px 12px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+.maxWidth {
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+.logo-home {
+  display: flex;
+  gap: 8rem;
+}
+.logo-home img {
+  max-width: 100px;
+}
+.list-items {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  color: var(--font-color-white);
+  font-weight: 600;
+}
+a:hover {
+  color: var(--font-color-orange);
+  transition: all 1s ease-in-out;
+}
+.header-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.signup-button {
+  padding: 10px 28px;
+  border: none;
+  background-color: var(--bg-orange);
+  color: var(--font-color-white);
+  margin-left: 15px;
+  font-weight: 500;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+.signin-button {
+  border: none;
+  background-color: transparent;
+  color: var(--font-color-white);
+  font-weight: 500;
+}
+.signin-button:hover {
+  cursor: pointer;
+  background-color: var(--bg-white);
+  padding: 10px 28px;
+  color: var(--font-color-orange);
+  font-family: "Poppins";
+  border-radius: 5px;
+  border: 2px solid var(--bg-orange);
+  transition: all 0.5s ease-out;
+}
+
+.mainpart {
+  background-image: url("./Assets/Photos/futuristic-bg.png");
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.main-part-container {
+  padding-top: 10rem;
+  color: var(--font-color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-partOne h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.main-partOne p {
+  width: 70%;
+  margin-bottom: 1.5rem;
+}
+.mainpart .main-part-container .main-partOne .button-section button{
+  padding: 10px 28px;
+  font-family: "Poppins";
+}
+
+.button-section .startButton {
+  background-color: var(--bg-orange);
+  border: none;
+  color: var(--font-color-white);
+}
+
+.button-section .learnMore-btn {
+  background-color: transparent;
+  border: 1px solid var(--bg-white);
+  color: var(--font-color-white);
+}
+
+.button-section .startButton:hover {
+  background-color: transparent;
+  border: 2px solid var(--bg-orange);
+  color: var(--bg-orange);
+}
+.button-section .learnMore-btn:hover {
+  background-color: var(--bg-orange);
+  border: 2px solid var(--bg-orange);
+  color: var(--font-color-white);
+}
+
+.main-partTwo {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+.main-partTwo img {
+  width: 100px;
+  place-self: center;
+}
+.main-partTwo h1 {
+  font-weight: 500;
+  text-transform: capitalize;
+  position: relative;
+  padding: 1rem 3rem;
+}
+.main-partTwo h1::before {
+  position: absolute;
+  content: url("./Assets/Icons/dash.svg");
+  top: 2px;
+  left: 0;
+  margin-right: 20px;
+}
+.main-partTwo h1::after {
+  content: url("/Assets/Icons/rightArrow.svg");
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+}
+
+.games-section {
+  padding: 4rem 0px;
+}
+.games-container .games-download-area .game {
+  position: relative;
+}
+.games-container .games-download-area .game .game-details {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+}
+.games-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.games-container .heading h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.games-download-area {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.games-download-area .game > img {
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: 50% 100%;
+}
+.games-container .games-download-area > :nth-child(1) img {
+  object-fit: cover;
+  object-position: 65% 100%;
+}
+.star-box img {
+  width: 15px;
+}
+.game-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ccd2c9aa;
+  padding: 17px;
+}
+.game-details:hover {
+  background-color: rgba(20, 19, 19, 0.915);
+  color: var(--font-color-white);
+}
+.game-details:hover > .description p {
+  color: white;
+}
+.download button {
+  border: none;
+  background-color: var(--bg-orange);
+  color: var(--font-color-white);
+  padding: 10px 26px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+.download button:hover {
+  background-color: var(--bg-orange-light);
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.description h1 {
+  font-size: 12px;
+  color: var(--font-color-white);
+}
+.description h1:hover {
+  font-size: 14px;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+.description p {
+  color: var(--font-color-darkgrey);
+}
+
+/* war game section starts */
+
+.war-game-area {
+  padding: 4rem 0px;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.left-side-area img {
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+}
+.right-side-area {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.right-side-area .heading-text {
+  font-size: 2.5rem;
+}
+.right-side-area .game-desc {
+  font-size: 14px;
+  color: var(--font-color-grey);
+}
+
+.buttons--war-game {
+  display: flex;
+  gap: 1.5rem;
+}
+.buttons--war-game button {
+  padding: 10px 28px;
+  font-weight: 600;
+}
+.explore-btn {
+  border: none;
+  background-color: var(--bg-orange);
+  color: var(--font-color-white);
+}
+.explore-btn:hover {
+  background-color: var(--bg-white);
+  cursor:pointer;
+  border: 2px solid var(--bg-orange);
+  color: var(--font-color-orange)
+}
+.learnmore-btn {
+  color: var(--font-color-orange);
+  border: 2px solid var(--bg-orange);
+}
+
+.learnmore-btn:hover {
+  cursor:pointer;
+  background-color: var(--bg-orange);
+  color: var(--font-color-white)
+}
+
+
+/* games recommended section starts */
+.first-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0px;
+}
+.first-section h1 {
+  font-size: 3rem;
+}
+.imageOne {
+  padding: 20px 14px;
+  background-color: var(--bg-orange-light);
+  cursor: pointer;
+}
+.imageTwo {
+  padding: 20px 14px;
+  background-color: var(--bg-orange);
+  cursor: pointer;
+}
+.box-section {
+  display: flex;
+  gap: 1rem;
+}
+
+.games-recommeded-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  margin-bottom: 3rem;
+  row-gap: 3rem;
+}
+.games-recommeded-section .games-info img {
+  width: 40%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 45% 100%;
+}
+.games-data {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.games-recommeded-section .games-info {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.games-data .download-button {
+  width: 140px;
+  padding: 14px 14px;
+  border: none;
+  background-color: var(--bg-orange);
+  color: var(--font-color-white);
+  font-weight: 600;
+}
+.games-data .download-button:hover {
+  cursor:pointer;
+  background-color: var(--bg-white);
+  border: 2px solid var(--bg-orange);
+  color: var(--font-color-orange);
+  transition: all 1s ease-in-out;
+}
+
+
+.games-data h1 {
+  font-size: 20px;
+}
+.games-data .sub-heading {
+  color: var(--font-color-orange);
+  font-weight: 600;
+}
+.games-data p {
+  color: var(--font-color-grey);
+  font-size: 14px;
+}
+
+/* games poster area styling starts  */
+
+.games-poster-area {
+  background-color: var(--bg-black);
+  padding: 2rem 0px;
+}
+
+.poster-area .poster-heading {
+  font-size: 2rem;
+  color: var(--font-color-white);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.images-section {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+.images-section img {
+  position: absolute;
+}
+.img-1 {
+  width: 400px;
+  height: 450px;
+  z-index: 10;
+}
+.img-2 {
+  width: 380px;
+  height: 400px;
+  bottom: 0px;
+  left: 37%;
+  z-index: 10;
+}
+.img-3 {
+  width: 320px;
+  height: 250px;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.img-4 {
+  width: 72%;
+  left: 330px;
+  object-fit: contain;
+  top: -120px;
+}
+.imags-section-msg {
+  position: absolute;
+  font-size: 12px;
+  color: var(--font-color-grey);
+  top: 10%;
+  width: 50%;
+  left: 37.5%;
+  z-index: 20;
+}
+
+/* banner area styling starts */
+
+.banner-section {
+  padding: 3rem 0px;
+  background-color: var(--bg-black);
+  color: var(--font-color-white);
+  position: relative;
+}
+.banner-section img {
+  position: absolute;
+  z-index: 10;
+  object-fit: cover;
+  opacity: 0.5;
+  height: 500px;
+}
+
+.banner-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  height: 500px;
+}
+.banner-heading {
+  text-align: center;
+  font-size: 3rem;
+  z-index: 9999;
+  margin-top: 3rem;
+}
+.banner-area p {
+  text-align: center;
+  z-index: 9999;
+  color: var(--font-color-grey);
+}
+
+.banner-button {
+  gap: 2rem;
+  padding: 12px 28px;
+  border: none;
+  background-color: var(--bg-orange);
+  color: var(--font-color-white);
+  z-index: 9999;
+}
+
+.banner-button:hover{
+  background-color: var(--bg-white);
+  cursor: pointer;
+  border: 3px solid var(--bg-orange);
+  color: var(--bg-orange);
+  font-weight: 600;
+
+}
+
+/* footer section styling starts */
+
+footer {
+  background-color: var(--bg-black);
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}
+.footer-area {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-area .logo-section img {
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.footer-area .logo-section img:hover {
+  max-width: 120px;
+  transition: all 0.5s ease-out;
+  
+}
+
+.footer-area .logo-section > :nth-child(2):hover {
+  cursor: pointer;
+}
+
+/* Social Media styling starts */
+
+.logo-section h3 {
+  color: var(--font-color-white);
+  font-weight: 400;
+  font-size: 12px;
+  padding: 0px 15px 0px 0px;
+  cursor: pointer;
+}
+.logo-section .image-area {
+  width: 100px;
+  display: flex;
+  gap: 10px;
+}
+
+
+
+/* article section styling starts */
+
+.article-section {
+  color: var(--font-color-white);
+
+}
+
+/* article section hover styling starts */
+
+.article-section>:nth-child(1):hover,
+.article-section ul>:nth-child(1):hover,
+.article-section ul>:nth-child(2):hover,
+.article-section ul>:nth-child(3):hover,
+.article-section ul>:nth-child(4):hover,
+.article-section ul>:nth-child(5):hover {
+  color: var(--bg-orange-light);
+  font-size: 1.1rem;
+  cursor:pointer;
+  transition: all 0.2s ease-out;
+}
+
+/* league section styling starts */
+
+.league-section {
+  color: var(--font-color-white);
+}
+
+/* league sectuon hover styling starts */
+
+.league-section>:nth-child(1):hover,
+.league-section ul>:nth-child(1):hover,
+.league-section ul>:nth-child(2):hover,
+.league-section ul>:nth-child(3):hover,
+.league-section ul>:nth-child(4):hover
+{
+  color: var(--bg-orange-light);
+  font-size: 1rem;
+  cursor:pointer;
+  transition: all 0.2s ease-out;
+}
+
+/* team section styling starts */
+
+.team-section {
+  color: var(--font-color-white);
+}
+
+/* Team section hovereffects starts */
+
+.team-section>:nth-child(1):hover,
+.team-section ul >:nth-child(1):hover,
+.team-section ul >:nth-child(2):hover,
+.team-section ul >:nth-child(3):hover,
+.team-section ul >:nth-child(4):hover {
+  color: var(--bg-orange-light);
+  font-size: 1.1rem;
+  cursor:pointer;
+  transition: all 0.2s ease-out;
+}
+
+
+
+/* conatct section styling starts */
+.contact-section {
+  color: var(--font-color-white);
+}
+
+/* conatct section hover styling starts  */
+
+.contact-section >:nth-child(1):hover,
+.contact-section ul>:nth-child(1):hover {
+  color: var(--bg-orange-light);
+  font-size: 1.1rem;
+  cursor:pointer;
+  transition: all 0.2s ease-out;
+  
+}
+
+/* footer styling starts */
+
+.footer-area .heading {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.footer-area ul li {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+/* last section styling starts */
+.last-area {
+  background-color: rgb(61, 60, 60);
+}
+
+.last-section {
+  padding: 1rem 10px;
+  color: var(--font-color-white);
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .list-items > :nth-child(4) {
+    display: none;
+  }
+  .list-items > :nth-child(3) {
+    display: none;
+  }
+  .list-items > :nth-child(2) {
+    display: none;
+  }
+  .logo-home {
+    display: flex;
+    gap: 1.2rem;
+  }
+  .main-part-container {
+    gap: 3rem;
+    flex-direction: column;
+  }
+  .main-partTwo {
+    gap: 2rem;
+
+    float: left;
+    width: 100%;
+  }
+  .main-partTwo h1 {
+    width: 48%;
+    margin-bottom: 3rem;
+  }
+  .games-download-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .war-game-area {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .left-side-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .footer-area {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .games-download-area {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .games-recommeded-section {
+    grid-template-columns: 1fr;
+  }
+  .images-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 650px) {
+  .main-partOne h1 {
+    font-size: 2rem;
+  }
+  .main-partTwo h1 {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .main-part-container {
+    padding-top: 6rem;
+  }
+  .right-side-area .heading-text {
+    font-size: 1.5rem;
+  }
+  .games-container .heading h1 {
+    font-size: 1.5rem;
+  }
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .games-recommeded-section .games-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .games-recommeded-section .games-info img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .first-section h1 {
+    font-size: 2rem;
+  }
+  .img-1 {
+    width: 40%;
+    height: 50%;
+    z-index: 10;
+  }
+  .img-2 {
+    top: 10%;
+    width: 40%;
+    height: 50%;
+    z-index: 9;
+    opacity: 100%;
+  }
+  .img-3 {
+    top: 20%;
+    width: 40%;
+    height: 50%;
+    z-index: 8;
+    opacity: 80%;
+  }
+  .imags-section-msg {
+    top: 80%;
+    width: 90%;
+    left: 5%;
+    font-size: 15px;
+  }
+  .footer-area {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+  .footer-area .logo-section {
+    grid-column: 1 / -1;
+    grid-row: 1/1;
+    place-items: center;
+  }
+  .banner-heading {
+    font-size: 2rem;
+  }
+  .poster-heading h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .signin-signup > :nth-child(1) {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .list-items > :nth-child(1) {
+    display: none;
+  }
+}
+
+@media (max-width: 300px) {
+  .button-section {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    gap: 1rem;
+  }
+}

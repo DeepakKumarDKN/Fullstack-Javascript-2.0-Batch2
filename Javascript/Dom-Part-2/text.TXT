@@ -1,0 +1,139 @@
+//TODO: inserting li tag into ul 
+const listobeAdded = `
+      <li>Rohit Sharma</li>
+      <li>Kl Rahul</li>
+      <li>Virat Kohili</li>
+      <li>SuryaKumar Yadav</li>
+      <li>Hardik Pandya</li>
+      <li>Ravindra Jadega</li>
+    `
+
+const ul = document.querySelector("ul")
+ul.innerHTML = listobeAdded
+
+
+TODO:// how to add element and remove element
+let createElement = document.createElement("h1")
+    createElement.className = "title"
+    createElement.style.fontSize = "20px";
+    createElement.style.color = "green"
+    createElement.style.fontFamily = "Poppins"
+    createElement.style.textTransform = "capitalize"
+    createElement.textContent = "created this using createElement in dom"
+
+    document.body.appendChild(createElement)
+    console.log(createElement)
+
+    document.body.removeChild(createElement)
+    console.log(createElement)
+
+// TODO: Workin with Loop
+
+// change the button style on clicking
+<h1>Hello Javascript Bootcamp 2.0</h1>
+  <button onclick="maths()" id = "fsjs">Submit</button>
+  <h1 class="js2"></h1>
+  <ul>
+
+  </ul>
+  <script>
+     function maths(){
+      let value = prompt('Find the value of 30-10')
+      if(value == 20){
+        document.querySelector(".js2").innerText = "Success Redirect"
+        document.querySelector(".js2").style.fontFamily = "Poppins"
+        document.getElementById("fsjs").style.backgroundColor = "Green"
+        document.getElementById("fsjs").style.padding = "20px 45px"
+        document.getElementById("fsjs").style.color = "white"
+        document.getElementById("fsjs").style.border = "0px"
+        document.getElementById("fsjs").innerText = "Fetched Correct value"
+      }
+      else{
+        document.getElementById("fsjs").innerText = "Failed To Fetch Correct value"
+        document.getElementById("fsjs").style.backgroundColor = "Red"
+        document.getElementById("fsjs").style.padding = "20px 45px"
+        document.getElementById("fsjs").style.color = "white"
+        document.getElementById("fsjs").style.border = "0px"
+      }
+    }
+   
+  </script>
+
+
+//TODO: working with add event listener
+
+TODO: document.addEventListenr
+
+Note: writting document mean the entire page we can click any where
+but if i want to add event listenter by targeting or by clicking specefic element then we have to
+write here the specefic element/id/class and if we only click on that specefied id/class/elemnt 
+the add eent listener will get applied
+
+//TODO: Working with event listener by clicking oecefic element/id/class
+
+TODO: document.getElementById("js").addEventListener
+
+//TODO: Here the event listener will only get applied if i clicked that particular id (button).
+// clicking anywhere on the page will not work.
+
+
+<h1>Learning Event Listener</h1>
+<button id="js">Event Listener</button>
+
+document.getElementById("js").addEventListener("click", hello)
+function hello(){
+  document.getElementById("js").textContent = "Learning add Event Listener for the first time"
+  document.getElementById("js").style.backgroundColor = "green"
+  document.getElementById("js").style.padding = "10px 30px"
+  document.getElementById("js").style.border = "0px"
+  document.getElementById("js").style.color = "white"
+  document.getElementById("js").style.fontFamily = "Poppins"
+}
+
+//TODO: Event Listener with doubleClick
+
+document.getElementById("js").addEventListener("dblclick" ,hello)
+function hello(){
+      document.getElementById("js").textContent = "Learning add Event Listener for the first time"
+      document.getElementById("js").style.backgroundColor = "green"
+      document.getElementById("js").style.padding = "10px 30px"
+      document.getElementById("js").style.border = "0px"
+      document.getElementById("js").style.color = "white"
+      document.getElementById("js").style.fontFamily = "Poppins"
+
+    }
+
+//TODO: Event Listener with mouseenter
+
+document.getElementById("js").addEventListener("mouseenter" ,hello)
+function hello(){
+      document.getElementById("js").textContent = "Learning add Event Listener for the first time"
+      document.getElementById("js").style.backgroundColor = "green"
+      document.getElementById("js").style.padding = "10px 30px"
+      document.getElementById("js").style.border = "0px"
+      document.getElementById("js").style.color = "white"
+      document.getElementById("js").style.fontFamily = "Poppins"
+
+    }
+
+
+// created an elemnt using createElement but removing through an event listener(click) by using 
+removeChild property
+
+let title = document.createElement('h2')
+title.className = "titleName"
+title.textContent = "Creating An Element using MDN"
+title.style.color = "red"
+title.style.fontFamily = "Poppins"
+document.body.appendChild(title)
+console.log(title)
+
+let element = document.querySelector(".titleName")
+element.addEventListener("click", function removeElement(){
+  document.body.removeChild(title)
+})
+
+the element will get removed if we will click on that element.
+TODO: NOTE:
+
+.Instead of click we can also use other event listener like mouseover etc etc.

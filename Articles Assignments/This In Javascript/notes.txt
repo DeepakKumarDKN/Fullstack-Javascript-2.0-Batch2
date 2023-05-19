@@ -1,0 +1,40 @@
+lets say i have created an empty file and i haven't written anything inside the file
+but still javascript engine will create a gobal execution context and sets some memory space
+even if it an an empty file.
+
+Javascript engine also create somethng else known as window as well as this.
+In the global label this points out to the window
+
+this === window : true
+
+window is a global object which is created along with the global execution context.
+so whenever we run javascript program 3 things are created:
+  1. Global Execution Context.
+  2. Global object
+  3. this
+
+I case of browsers the Global Object is also known as window
+Even though the file is empty the javascript will create this global Object.
+
+Global Space:
+-------------
+var name = "deepak"
+function display(){
+  let username = "rahul"
+}
+
+here name is in the global spoace.
+funcion display is in the global space
+username is not in the global space because it is inside the function
+
+so anything which is not inside the function is in the global space.
+
+Whenever we will create any variable or fuctons in the global space we can access
+it anywhere inside the program
+
+These variables are function are get attatched into the global object which is known as window.
+
+we can access it by writting ,
+console.log(window.name)
+console.log(this.name)
+

@@ -1,0 +1,102 @@
+Scope:
+-----
+Scope mean where i can access a particular variable and a function in our code.
+In the other words scope detemine the accessibility and visibility of a varibale/function.
+
+Types Of Scope: 
+---------------
+
+Global Scope: Variables declared outside the function are called globally scope variable.
+and these variables can be accessed from anywhere in the program
+
+Example:
+--------
+var username = 'deepak kumar'
+let surname = 'nayak'
+const location = 'India'
+
+function displayDetails(){
+  console.log(username) // can be accessibile here
+  console.log(surname)  // can be accessibile here
+  console.log(location) // can be accessibile here
+
+  function displayData(){
+    console.log(`accessing it from inner function ${location}`)
+  }
+  displayData()
+}
+
+displayDetails()
+
+console.log(username) // can be accessible here also 
+console.log(surname)  // can be accessible here also
+
+// so i can access these inside the function as well as outside the function.
+
+Local Scope:
+-----------
+Variables which are defined inside the function are known as Local Scope variables and they are accessible only inside that 
+function not outside the function.
+
+Example:
+
+console.log(username) //not accessible here
+
+function displayDetails(){
+  var username = "deepak"
+  console.log(username)  // we can access it here
+}
+console.log(username)  // not accessible here
+
+
+Block Scope: 
+------------
+In Javascript the block scope concept came into existense after the es6 introduced into the javascript.
+the let and const behave as a block scope i mean they the two keywords let and const provide the block scope in 
+javascript
+
+In block scope the variables which are declared inside the scopr cannot be accessed outside the block.
+
+Example: 
+
+function displayNumbers(){
+  if (true){
+    var a = 30 
+    let b = 40
+    const c = 50
+  }
+  console.log(a) // a can be accessibile because here a is not a block scope
+  console.log(b) // cannot be accessed it here as it acts as a block scope
+  console.log(c) // cannot be accessed it here as it acts as a block scope
+}
+
+displayNumbers()
+
+Note: The variables declared which are declared with var will not act as a blockscope
+but the variables declared with let and const will act as a block scope
+
+function display(){
+  var username ="deepak"
+  function displayData(){
+    console.log(username)
+  }
+  displayData()
+}
+
+display()
+
+
+
+
+Scope is directly proptional to the lexical environment.
+The lexical environment is created when the global execution context is created.
+
+The lexical environment is the local memory along with its parent lexical environment.
+from the above example it is very evident that the displayData() function is lexically inside
+display() function
+
+and display function is lexically inside the global scope
+
+
+
+

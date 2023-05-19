@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full h-full m-0 p-0 box-border overflow-x-hidden scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+<body class="bg-zinc-900 w-full h-full m-0 p-0 box-border overflow-x-hidden scroll-smooth">
+  <!--Navbar Section Starts-->
+  <section area="navbar-section" class="text-white">
+    <nav class="max-w-7xl mx-auto flex justify-between relative">
+      <div class="flex items-center shrink-0 sm:ml-4">
+        <div><img src="./images/icons8-visual-studio-code-2019-240.png" alt="" class="h-10 mr-12 ml-4"></div>
+        <div class="text-lg -ml-8">Visual Studio Code</div>
+      </div>
+      <div class="flex invisible items-center -ml-32 text-zinc-400 font-semibold lg:invisible xl:visible">
+        <ul class="flex gap-5">
+          <li class="hover:text-white cursor-pointer">Docs</li>
+          <li class="hover:text-white cursor-pointer">Update</li>
+          <li class="hover:text-white cursor-pointer">Blog</li>
+          <li class="hover:text-white cursor-pointer">Api</li>
+          <li class="hover:text-white cursor-pointer">Extensions</li>
+          <li class="hover:text-white cursor-pointer">FAQ</li>
+          <li class="hover:text-white cursor-pointer">Learn</li>
+        </ul>
+      </div>
+
+      <div class="flex invisible justify-end md:invisible lg:visible sm:invisible">
+        <div class="flex bg-neutral-700 py-4 px-12 hover:bg-zinc-600">
+          <img src="./images/search.svg" alt="" class="h-4 mr-2 mt-1 cursor-pointer">
+          <div>Search Docs</div>
+        </div>
+        <div class="flex bg-blue-600 items-center py-4 px-8 cursor-pointer hover:bg-blue-700">
+            <img src="./images/download.svg" alt="" class="h-4">
+          <div>Download</div>
+        </div>
+      </div>
+
+      <div class="visible space-y-2 absolute bottom-1 right-0 inset-y-8 right-8 lg:invisible md:visible">
+        <span class="block w-8 h-0.5 bg-white"></span>
+        <span class="block w-8 h-0.5 bg-white"></span>
+        <span class="block w-8 h-0.5 bg-white"></span>
+      </div>
+    </nav>
+  </section>
+  <!--Navbar Section Ends-->
+  
+  <!--Banner Section Start-->
+  <section area="banner">
+    <div class="text-center bg-neutral-800 py-2 px-8">
+        <span class="text-sky-300 cursor-pointer hover:underline">Version 1.75</span>
+        <span class="text-white">is now available! Read about the new features and fixes from January.</span>
+    </div>
+  </section>
+  <!--Banner Section Ends-->
+
+  <!--Main area starts-->
+  <section area="main-area">
+    <div class="max-w-7xl mx-auto flex flex-col gap-y-8 items-center justify-between my-12 px-2 md:flex-col lg:flex-row">
+
+      <div class="mb-0 h-1/2">
+        <p class="text-5xl text-white text-center mb-2 font-thin">Code Editting.</p>
+        <p class="text-5xl text-white text-center mb-2">Redefined.</p>
+        <p class="text-white text-center my-4 text-zinc-500 text-lg">Free. Built on open source. Runs everywhere</p>
+        <div class=" flex text-center justify-center text-white gap-1 my-4">
+          <button class="text-lg font-bold bg-blue-600 p-3 px-6">Download For Windows
+            <p class="text-sm font-light">Stable Build</p>
+          </button>
+          <button class="text-lg font-bold bg-blue-600 p-3">
+            <img src="./images/white-arrow-png-41944.png" alt="" class="h-5">
+          </button>
+        </div>
+        <p class="text-center bg-zinc-800 text-zinc-700 py-2 rounded-lg mb-4"><span class="hover:underline text-sky-700 cursor-pointer">Web</span>, 
+          <span class="hover:underline text-sky-700 cursor-pointer">Insiders edition</span>, <span class="text-zinc-400">or</span> <span  class="hover:underline text-sky-700 cursor-pointer">other platforms</span></p>
+        <p class="text-center text-zinc-500 text-xs">By using VS Code, you agree to its</p>
+        <p class="hover:underline text-center text-sky-700 text-xs cursor-pointer">license and privacy statement.</p>
+      </div>
+
+      <div>
+        <img src="./images/VisualStudio Image.png" alt="" class="h-4/5 w-4/5 ml-40 md:mx-auto sm:mx-auto min-[320px]:mx-auto max-[639px]:mx-auto">
+      </div>
+
+    </div>
+  </section>
+  <!--Main Area Ends-->
+
+  <!--Features Section Starts-->
+  <div class="bg-white">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 py-4 md:grid-cols-4 py-4 gap-y-6 lg:grid-cols-4 place-items-stretch py-2">
+      <div class="text-center hover:cursor-pointer hover:bg-white hover:border-2">
+        <img src="./images/light icon.png" alt="" class="m-auto md:h-14 sm:h-12 max-[420px]:h-12">
+        <h1 class="text-2xl md:text-lg max-[420px]:text-xl">IntelliSense</h1>
+      </div>
+      <div class="text-center hover:cursor-pointer hover:border-2">
+        <img src="./images/rundebug icon.png" alt="" class="m-auto md:h-14 sm:h-12 max-[420px]:h-12">
+        <h1 class="text-2xl md:text-lg max-[420px]:text-xl">Run and Debug</h1>
+      </div>
+      <div class="text-center hover:cursor-pointer hover:border-2">
+        <img src="./images/builtin git.png" alt="" class="m-auto md:h-14 sm:h-12 max-[420px]:h-12">
+        <h1 class="text-2xl md:text-lg max-[420px]:text-xl">Built-in-Git</h1>
+      </div>
+      <div class="text-center hover:cursor-pointer hover:border-2">
+        <img src="./images/extension icons.png" alt="" class="m-auto md:h-14 sm:h-12 max-[420px]:h-12">
+        <h1 class="text-2xl md:text-lg max-[420px]:text-xl">Extension</h1>
+      </div>
+    </div>
+  </div>
+  <!--Features Area Ends-->
+  
+  <!--Our Customers Section Starts-->
+  <div class="bg-gray-100">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-1 px-10 lg:grid-cols-3 gap-2 py-32">
+      <div class="flex">
+        <img src="./images/Customer Image One.jpg" alt="" class="h-20 rounded-full mr-2 cursor-pointer">
+        <div><p class="text-sm font-bold hover:text-sky-700 cursor-pointer">Una Kravets<span class="font-medium text-zinc-400 text-xs ml-1 hover:cursor-pointer">@Una</span></p>
+          VS <span class="text-sky-700 hover:cursor-pointer">@code</span> does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</div>
+      </div>
+      <div class="flex">
+        <img src="./images/Customer Image Two.jpg" alt="" class="h-20 rounded-full mr-2 cursor-pointer">
+        <div><p class="text-sm font-bold hover:text-sky-700 cursor-pointer">Jonathan Dunlap<span class="font-medium text-zinc-400 text-xs ml-1 hover:cursor-pointer">@jadbox</span></p>
+          VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</div>
+      </div>
+      <div class="flex">
+        <img src="./images/Customer Image Three.jpg" alt="" class="h-20 rounded-full mr-2 cursor-pointer">
+        <div><p class="text-sm font-bold hover:text-sky-700 cursor-pointer">Pavithra Kodmad<span class="font-medium text-zinc-400 text-xs ml-1 hover:cursor-pointer">@PKodmad</span></p>
+          VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy!</div>
+      </div>
+    </div>
+  </div>
+  <!--Our Customers Section Ends-->
+
+  <!--Features Section Part Two-->
+  <section area="features-section">
+    <div class="bg-white">
+      <div class="max-w-6xl mx-auto py-16 px-5">
+        <div class="flex justify-around flex-col sm:flex-col md:flex-row lg:flex-row min-[320px]:flex-col">
+            <img src="./images/one.svg" alt="" class="h-60 mx-auto sm:mx-auto md:h-40 lg:h-60 md:mr-24">
+          <div class="">
+            <p class="text-3xl mb-8 sm:">Meet IntelliSense.</p>
+            <p class="leading-10 sm:leading-8">Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions based on variable types, function definitions, and imported modules.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="bg-gray-100">
+      <div class="max-w-6xl mx-auto py-20 px-5">
+        <div class="flex justify-around flex-col flex-col-reverse sm:flex-col sm:flex-col-reverse md:flex-row">
+          <div>
+            <p class="text-3xl font-light mb-4">Print statement debugging is a thing of the past.</p>
+            <p class="leading-10">Debug code right from the editor. Launch or attach to your running apps and debug with break points, call stacks, and an interactive console.</p>
+          </div>
+            <img src="./images/two debug.svg" alt="" class="sm:mx-auto md:h-40 lg:h-60 md:ml-24 max-[640px]:h-60">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="bg-white">
+      <div class="max-w-6xl mx-auto py-20 px-5">
+        <div class="flex justify-around sm:flex-col md:flex-row max-[640px]:flex-col">
+          <img src="./images/home-git 3.svg" alt="" class="mx-auto  md:h-40 lg:h-60 mr-24">
+          <div class="">
+            <p class="text-3xl font-light mb-4">Git commands built-in.</p>
+            <p class="leading-10 -8">Working with Git and other SCM providers has never been easier. Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted SCM service.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="bg-gray-100">
+      <div class="max-w-6xl mx-auto py-20 px-5">
+        <div class="flex justify-around flex-col flex-col-reverse sm:flex-col sm:flex-col-reverse md:flex-row">
+          <div class="">
+            <p class="text-3xl font-light mb-4">Extensible and customizable.</p>
+            <p class="leading-10">Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate  processes, ensuring they won't slow down your editor. Learn more about extensions.</p>
+          </div>
+          <img src="./images/Hundreds-of-Extensions.png" alt="" class="h-48 mx-auto mb-8 md:h-40 lg:h-60 md:ml-24">
+        </div>
+      </div>
+    </div>
+  
+    <div class="bg-white">
+      <div class="max-w-6xl mx-auto py-20 px-5">
+        <div class="flex justify-around sm:flex-col md:flex-row max-[640px]:flex-col">
+          <img src="./images/azure Image.svg" alt="" class="mx-auto h-60 sm:mx-auto md:h-40 lg:h-60 md:mr-24">
+          <div class="">
+            <p class="text-3xl mb-8">Deploy with confidence and ease</p>
+            <p class="leading-10">With <span class="text-sky-600 hover:cursor-pointer hover:underline">Microsoft Azure</span> you can deploy and host your React, Angular, Vue, Node,
+              Python (and more!) sites, store and query relational and document based data,
+              and scale with serverless computing, all with ease, <span class="text-sky-600 hover:underline">all from within VS Code.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Features Section Part Two Ends-->
+
+  <!--Programming Icon Section-->
+  <div class="bg-gray-100 mx-auto grid md:grid-row-2 lg:grid-row-2 py-20">
+    <div class="max-w-6xl mx-auto grid sm:grid-cols-3 md:grid-cols-4 gap-y-6 gap-x-16 lg:grid-cols-6 px-20 gap-y-6 gap-x-16 mb-8  min-[320px]:grid-cols-2">
+        <div class="flex">
+          <img src="./images/program icon One.svg" alt="progamming-image">
+          <p class="text-lg cursor-pointer">Javascript</p>
+        </div>
+        <div class="flex">
+          <img src="./images/program icon two.svg" alt="progamming-image">
+          <p class="text-lg cursor-pointer">Python</p>
+        </div>
+        <div class="flex">
+          <img src="./images/program icon threee.svg" alt="progamming-image">
+          <p class="text-lg cursor-pointer">Java</p>
+        </div>
+        <div class="flex">
+          <img src="./images/markdown.svg" alt="progamming-image">
+          <p class="text-lg cursor-pointer">Markdown</p>
+        </div>
+        <div class="flex">
+          <img src="./images/typescript.svg" alt="progamming-image">
+          <p class="text-lg cursor-pointer">TypeScript</p>
+        </div>
+        <div class="flex">
+          <img src="./images/cpp.svg" alt="progamming-image">
+          <p class="text-lg cursor-pointer">C/C++</p>
+        </div>
+        <div class="flex">
+          <img src="./images/json.svg" alt="progamming-image">
+          <p class="text-lg cursor-pointer">JSON</p>
+        </div>
+        <div class="flex">
+          <img src="./images/powershell.svg" alt="progamming-image">
+          <p class="text-lg cursor-pointer">Powercell</p>
+        </div>
+        <div class="flex">
+          <img src="./images/html.svg" alt="">
+          <p class="text-lg cursor-pointer">HTML/CSS</p>
+        </div>
+        <div class="flex">
+          <img src="./images/csharp.svg" alt="progamming-image">
+          <p class="text-lg cursor-pointer">C#</p>
+        </div>
+        <div class="flex">
+          <img src="./images/php.svg" alt="programming-image">
+          <p class="text-lg cursor-pointer">PHP</p>
+        </div>
+        <div class="flex">
+          <img src="./images/yaml.svg" alt="programming-image">
+          <p class="text-lg cursor-pointer">YAML</p>
+        </div>
+    </div>
+    <p class="text-center my-6 text-lg text-cyan-700 hover:underline">and many more languages on the Marketplace...</p>
+    <div class="flex justify-center">
+      <button class="bg-blue-600 text-white py-4 px-10 text-lg font-semibold">Get Started Now</button>
+    </div>
+  </div>
+  <!--Programming Icon Section Ends-->
+
+  <!--Requirements Section Starts-->
+
+  <section area="downloadSection" class="bg-white py-12">
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-x-12">
+
+    <div class="text-white w-84">
+      <div class="flex items-center justify-center mb-5">
+        <img src="./images/windows-icon-png-5802.png" alt="" class="h-32">
+      </div>
+
+      <div class="flex flex-col items-center justify-center bg-blue-600 w-60 py-3 mb-5 sm:mx-auto hover:bg-blue-700 hover:cursor-pointer 
+      max-[639px]:flex mx-auto">
+        <div class="flex">
+          <img src="./images/download (1).svg" alt="" class="h-4 mt-1 mr-2">
+          <p>Windows</p>
+        </div>
+        <div>Windows 8,10,11</div>
+      </div>
+
+      <div class="flex flex-row justify-center">
+        <div class="text-black font-semibold">
+          <p>User Installer</p>
+          <p>System Installer</p>
+          <p>.zip</p>
+          <p>CLI</p>
+        </div>
+        <div class="flex flex-col mb-5">
+          <div class="flex flex-row gap-0.5 mb-1">
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">x64</p>
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">x86</p>
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">Arm64</p>
+          </div>
+          <div class="flex flex-row gap-0.5 mb-1">
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">x64</p>
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">x86</p>
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">Arm64</p>
+          </div>
+          <div class="flex flex-row gap-0.5 mb-1">
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">x64</p>
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">x86</p>
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">Arm64</p>
+          </div>
+          <div class="flex flex-row gap-0.5 mb-1">
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">x64</p>
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">x86</p>
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">Arm64</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-white w-84">
+      <div class="flex items-center justify-center mb-5 ">
+        <img src="./images/linux (2).png" alt="" class="h-32">
+      </div>
+
+      <div class="flex flex-col items-center justify-center  w-60 py-3 mb-5 sm:mx-auto max-[639px]:flex mx-auto ">
+        <div class="flex gap-2">
+
+         <div class="containerOne flex flex-col bg-blue-600 px-8 py-3 hover:bg-blue-700 hover:cursor-pointer">
+          <div class="flex">
+            <img src="./images/download (1).svg" alt="" class="h-4 mt-1 mr-2">
+            <p>.deb</p>
+          </div>
+          <div class="flex">
+            <p>Debian</p>
+            <p>Ubuntu</p>
+          </div>
+         </div>
+
+         <div class="conteinerTwo flex-col bg-blue-600 px-8 py-3 hover:bg-blue-700 hover:cursor-pointer">
+          <div class="flex">
+            <img src="./images/download (1).svg" alt="" class="h-4 mt-1 mr-2">
+            <p>.deb</p>
+          </div>
+          <div class="flex">
+            <p>Debian</p>
+            <p>Ubuntu</p>
+          </div>
+         </div>
+
+        </div>
+      </div>
+
+      <div class="flex flex-row justify-center">
+        <div class="text-black font-semibold">
+          <p>.deb</p>
+          <p>.rpm</p>
+          <p>.tar.gz</p>
+          <p>Snap</p>
+        </div>
+
+        <div class="flex flex-col mb-5">
+          <div class="flex flex-row gap-0.5 mb-1">
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">x64</p>
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">Arm32</p>
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">Arm64</p>
+          </div>
+          <div class="flex flex-row gap-0.5 mb-1">
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">x64</p>
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">Arm32</p>
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">Arm64</p>
+          </div>
+          <div class="flex flex-row gap-0.5 mb-1">
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">x64</p>
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">Arm32</p>
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">Arm64</p>
+          </div>
+          <div class="flex flex-row gap-0.5 mb-1">
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs">Snap Store</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-white w-84">
+      <div class="flex items-center justify-center mb-5 ">
+        <img src="./images/apple-logo.png" alt="" class="h-32">
+      </div>
+
+      <div class="flex flex-col items-center justify-center bg-blue-600 w-60 py-3 mb-5 sm:mx-auto hover:bg-blue-700 max-[639px]:flex mx-auto">
+        <div class="flex">
+          <img src="./images/download (1).svg" alt="" class="h-4 mt-1 mr-2">
+          <p>Mac</p>
+        </div>
+        <div>macOS 10.11+</div>
+      </div>
+
+      <div class="flex flex-row justify-center">
+        <div class="text-black font-semibold">
+          <p class="mb-4">.zip</p>
+          <p>CLI</p>
+        </div>
+        <div class="flex flex-col mb-5">
+          <div class="flex flex-row gap-0.5 mb-1">
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs mb-4 hover:bg-blue-700 cursor-pointer">Intel Chip</p>
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs mb-4 hover:bg-blue-700 cursor-pointer">Apple Silicon</p>
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs mb-4 hover:bg-blue-700 cursor-pointer">Universal</p>
+          </div>
+          <div class="flex flex-row gap-0.5 mb-1">
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">Intel Chip</p>
+            <p class="bg-blue-600 ml-0.5 p-0.5 text-xs hover:bg-blue-700 cursor-pointer">Apple Silicon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </section>
+
+  <!--Requirements Section Ends-->
+
+  <!--License Section Starts-->
+    <section area="licensePage" class="bg-gray-100 py-12">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mb-20 sm:grid-cols-1">
+        <div class="flex flex-col items-center justify-center mb-10">
+          <p class="text-2xl font-semibold">What's new feature sonner</p>
+          <p class="text-lg">Get the <span class="text-sky-700 hover:cursor-pointer">Insiders build</span> instead.</p>
+        </div>
+        <div class="flex flex-col px-2 items-center justify-center mb-10">
+          <p class="text-sm md:text-2xl lg:text-2xl font-semibold">Use <span class="text-sky-700 cursor-pointer">vscode.dev </span>for quick edits online!</p>
+          <p class="text-sm md:text-2xl lg:text-2xl">GitHub, Azure Repos, and local files.</p>
+        </div>
+      </div>
+      <div class="max-w-6xl mx-auto text-center">
+        <div class="flex flex-col">
+          <p class="font-semibold text-zinc-600 max-[639px]:mb-2 cursor-pointer">License and Privacy Terms</p>
+          <p class="mx-8 leading-8 text-zinc-600 md:mx-40 sm:mx-32">
+            By downloading and using Visual Studio Code, you agree to the <span class="text-sky-700 cursor-pointer">license terms</span> and <span class="text-sky-700">privacy</span> statement. VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see </span> and <span class="text-sky-700">How to Disable Crash Reporting</span> to learn how to disable it.
+          </p>
+        </div>
+      </div>
+    </section>
+  <!--License Section Ends-->
+
+  <!--Footer Section Starts-->
+
+    <section area="footer-section" class="py-10 text-white text-sm px-10">
+      <footer class="flex max-w-7xl mx-auto flex-col lg:flex-row justify-evenly md:flex-col items-start">
+        <div class="flex mb-4 flex-wrap">
+          <ul class="flex flex-row items-center justify-center gap-4 sm:gap-8 md:gap-8 lg:gap-8">
+            <li class="">Hello from Seattle</li>
+            <li class="hover:cursor-pointer hover:text-purple-200"> Follow @code</li>
+            <li class="flex bg-white px-1 py-1 text-black font-semibold flex-row hover:cursor-pointer hover:bg-purple-200 place-items-center">
+              <img src="./images/github.png" alt="" class="lg:h-3 md:h-3 sm:h-3 max-[640px]:h-3">
+              <p class="font-bold text-xs">Star</p></li>
+            <li class="bg-white px-1 py-1 text-black font-bold -ml-3 text-xs hover:cursor-pointer hover:bg-purple-200">143,060</li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="flex justify-start gap-8 items-center text-xs flex-wrap gap-y-2">
+            <li class="hover:cursor-pointer hover:text-purple-200">Support</li>
+            <li class="hover:cursor-pointer hover:text-purple-200">Privacy</li>
+            <li class="hover:cursor-pointer hover:text-purple-200">Terms of Use</li>
+            <li class="hover:cursor-pointer hover:text-purple-200">License</li>
+            <li class="flex flex-col place-items-center">
+              <div class="flex gap-1 mb-2">
+                <img src="./images/microsoft.png" alt="" class="h-6 mt-2 max-[640px]:h-6">
+                <p class="text-sm mt-2">Microsoft</p>
+              </div>
+              <div class="flex">
+                <img src="/images/copyright.png" alt="" class="h-2.5">
+                <p class="-mt-1 ml-1 text-xs">2023 Microsoft</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </section>
+
+  <!--Footer Section Ends-->
+</body>
+</html>

@@ -1,0 +1,43 @@
+getting element using id and class name: 
+
+<p class="para" id="parag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolores perferendis corporis animi magni aliquid nostrum voluptatum ab eum asperiores commodi alias accusamus ex similique, rem tenetur ipsam laboriosam, 
+dicta culpa incidunt. Perferendis, eveniet? Unde, eum voluptatum id, beatae fugiat ad explicabo facere ab repudiandae, eius ullam et amet asperiores.  </p>4
+
+TODO: now i am gonna access using  
+  id name parag
+
+syntax:
+let result = document.getElementById("parag")
+console.log(result)
+
+result.innerHTML
+
+'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolores perferendis corporis animi magni 
+aliquid nostrum voluptatum ab eum asperiores commodi alias accusamus ex similique, rem tenetur ipsam laboriosam, 
+dicta culpa incidunt. Perferendis, eveniet? Unde, eum voluptatum id, beatae fugiat ad explicabo facere ab repudiandae, 
+eius ullam et amet asperiores.  '
+
+TODO: Accessing using classname
+let result = document.getElementsByClassName('tech')
+  console.log(result)
+  for(let i of result){
+    console.log(result[0].innerHTML)
+  }
+
+we never use class name and id namein dom we always use query selector now lets leran about query selector.
+
+let data = document.querySelector("p").innerText
+console.log(data)
+
+let result = document.querySelectorAll(".tech")
+  for(let i of result){
+    console.log(i.innerHTML)
+  }
+
+let result = document.querySelector(".para").innerText
+console.log(result)
+
+changing the color of p in dom.
+--------------------------------
+let result = document.querySelector(".para").style.color="red";
+console.log(result)
