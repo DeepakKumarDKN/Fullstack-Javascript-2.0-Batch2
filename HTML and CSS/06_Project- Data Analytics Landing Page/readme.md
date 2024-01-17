@@ -7,7 +7,7 @@
 - **Hitesh Choudhury**
 - **Anurag Tiwari**
 
->Responsive Version Link : **[Link](https://6454f418f948c3006317ac31--data-analytics-landing-page-ineuron.netlify.app/)**  
+>Responsive Version Link : **[Link](https://data-analytics-landing-page-ineuron.netlify.app/)**  
 
 ## Output
 ![Project6](./Data%20Analytics%20Landing%20page.png)
